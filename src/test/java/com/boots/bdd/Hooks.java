@@ -12,13 +12,13 @@ public class Hooks {
     public void setUp() {
         driversFactory.openBrowser();
         driversFactory.navigateUrl("http://www.boots.com/");
-        driversFactory.maximizeWindow();
+    //    driversFactory.maximizeWindow();
         driversFactory.implWait();
     }
 
     @After
     public void tearDown(Scenario scenario) {
-        if (!scenario.isFailed()) {
+        if (scenario.isFailed()) {
             driversFactory.embedScreenshot(scenario);
         }
         driversFactory.closeBrowser();
