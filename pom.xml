@@ -25,7 +25,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <version>${junit.version}</version>
     </dependency>
     <dependency>
       <groupId>info.cukes</groupId>
@@ -55,7 +55,7 @@
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>
-      <version>LATEST</version>
+      <version>2.2.2</version>
     </dependency>
   </dependencies>
 
