@@ -39,8 +39,8 @@ public class StepDefsRating {
 
     @Given("^hjhj$")
     public void hjhj() {
-        WebDriver driver=new FirefoxDriver(scenario);
+        WebDriver driver=new FirefoxDriver();
         driver.get("http://www.google.com");
-        new DriversFactory().embedScreenshot();
+        new DriversFactory().embedScreenshot(scenario);
     }
 }
