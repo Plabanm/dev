@@ -12,7 +12,7 @@ public class Hooks {
     public void setUp() {
         driversFactory.openBrowser();
         driversFactory.navigateUrl("http://www.boots.com/");
-    //    driversFactory.maximizeWindow();
+        driversFactory.maximizeWindow();
         driversFactory.implWait();
     }
 
