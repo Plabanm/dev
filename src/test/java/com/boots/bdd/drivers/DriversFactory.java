@@ -52,7 +52,7 @@ public void openBrowser(){
 
 public void navigateUrl(String url){driver.get(url);}
 public void maximizeWindow(){driver.manage().window().maximize();}
-public void implWait(){driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);}
+public void implWait(){driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);}
 public void closeBrowser(){driver.quit();}
 public void sleepBroswer(int ms){
     try {
