@@ -38,14 +38,9 @@
       <version>${cucumber.version}</version>
     </dependency>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>${junit.version}</version>
-    </dependency>
-    <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>LATEST</version>
+      <version>3.7.1</version>
     </dependency>
     <dependency>
       <groupId>org.hamcrest</groupId>
