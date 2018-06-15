@@ -1,8 +1,10 @@
 package com.boots.bdd.stepDefs;
 
+import com.boots.bdd.drivers.DriversFactory;
 import com.boots.bdd.page_objects.HeaderPage;
 import com.boots.bdd.page_objects.ResultPage;
 import cucumber.api.PendingException;
+import cucumber.api.Scenario;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -13,6 +15,7 @@ public class StepDefsRating {
 
     HeaderPage headerPage1 = new HeaderPage();
     ResultPage resultPage1 = new ResultPage();
+    Scenario scenario;
 
     @Given("^when I am on the home page of Boots$")
     public void when_I_am_on_the_home_page_of_Boots() {
@@ -36,7 +39,8 @@ public class StepDefsRating {
 
     @Given("^hjhj$")
     public void hjhj() {
-        WebDriver driver=new FirefoxDriver();
+        WebDriver driver=new FirefoxDriver(scenario);
         driver.get("http://www.google.com");
+        new DriversFactory().embedScreenshot();
     }
 }
