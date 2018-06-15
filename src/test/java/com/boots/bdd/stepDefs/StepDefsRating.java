@@ -2,9 +2,12 @@ package com.boots.bdd.stepDefs;
 
 import com.boots.bdd.page_objects.HeaderPage;
 import com.boots.bdd.page_objects.ResultPage;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class StepDefsRating {
 
@@ -29,5 +32,11 @@ public class StepDefsRating {
     @Then("^I should see results filtered star ratings$")
     public void i_should_see_results_filtered_star_ratings() {
 
+    }
+
+    @Given("^hjhj$")
+    public void hjhj() {
+        WebDriver driver=new FirefoxDriver();
+        driver.get("http://www.google.com");
     }
 }
