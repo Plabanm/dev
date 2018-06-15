@@ -9,17 +9,17 @@ public class Hooks {
     DriversFactory driversFactory = new DriversFactory();
 
     @Before
-    public void setUp(){
+    public void setUp() {
         driversFactory.openBrowser();
         driversFactory.navigateUrl("http://www.boots.com/");
         driversFactory.maximizeWindow();
         driversFactory.implWait();
     }
 
-    //@After
-    public void tearDown(Scenario scenario){
-        if(!scenario.isFailed()) {
-        driversFactory.embedScreenshot(scenario);
+    @After
+    public void tearDown(Scenario scenario) {
+        if (!scenario.isFailed()) {
+            driversFactory.embedScreenshot(scenario);
         }
         driversFactory.closeBrowser();
     }
