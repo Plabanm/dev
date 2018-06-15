@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 
 public class DriversFactory {
 
-private String browser="Chrome";
+private String browser="";
 public static WebDriver driver;
 
 public void openBrowser(){
