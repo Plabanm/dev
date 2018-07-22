@@ -12,9 +12,4 @@ Feature: FilterByPrice
 
     Examples:
       | priceFilterValue |
-      |less than £2      |
-
-
-    @rk1
-    Scenario: jd
-      Given hjhj
+      | less than £2     |
